@@ -1,23 +1,32 @@
 ---
 layout: default
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DevTips Starter Kit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
 
-<div class="home">
+<header class="main-site-header">
+  <div class="logo"></div>
+</header>
+<main class="content">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <section class="page-information">
+    <article>
+      <h1>Pages</h1>
+      <hr>
+      <p>Hello, Here is a sample of all of the pages in the yearbook in their current state. Keep checking back for future iddirations and designs, happy browsing.</p>
+    </article>
+    {%include page-pics.html%}</section>
+</main>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>

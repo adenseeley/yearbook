@@ -1,0 +1,30 @@
+---
+---
+// This is the single file output by sass. It is intended to ONLY @import other files.
+.content
+  text-align: center
+  margin: 0 auto
+  z-index: 4
+  position: relative
+  margin-bottom: 260px
+  background: white
+.page-information
+  max-width: 960px
+  margin: 0 auto
+  padding: 50px 0 50px 0 
+
+// 1 - TOOLS
+//@import '1-tools/bourbon/bourbon'
+@import '1-tools/fonts'
+@import '1-tools/normalize'
+@import '1-tools/vars'
+
+
+// 2 - BASICS
+@import '2-basics/base'
+
+// 3 - Modules
+@import '3-modules/paralax-hero'
+@import '3-modules/page-pics'
+@import '3-modules/footer'
+// 4 - pages
